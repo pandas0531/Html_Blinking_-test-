@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #698AA1;
+}
+
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.material-icons{
+    font-size: 10rem;
+}
+
+.lg-text{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sm-text{
+    font-size: 1.5rem;
+}
+
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+}
+
+#dynamic.active::after{
+    display: none;
+}
